@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wei Li & Deborah Wedding</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&family=Noto+Serif+SC&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ENTRY SCREEN -->
+<div id="entry-screen">
+  <div class="entry-content">
+    <h1>Wei Li & Deborah</h1>
+    <p>Welcome to our beginning ✨</p>
+    <p class="lang zh">点击进入请柬</p>
+  </div>
+</div>
+
+<!-- LANGUAGE TOGGLE -->
+<div class="lang-switch">
+  <div class="lang-slider">
+    <div class="lang-indicator"></div>
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('zh')">中文</button>
+  </div>
+</div>
+
+<!-- PETALS -->
+<canvas id="petals"></canvas>
+
+<!-- MUSIC -->
+<audio id="bg-music" loop>
+  <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- HERO -->
+<section class="hero fade">
+
+  <p class="lang en active">Together with their families</p>
+  <p class="lang zh">在双方家人的见证下</p>
+
+  <h1>Wei Li & Deborah</h1>
+
+  <p class="date">3 October 2026</p>
+
+  <p class="lang en active">We sincerely invite you to witness our wedding.</p>
+  <p class="lang zh">诚挚邀请您见证我们的婚礼</p>
+
+</section>
+
+<!-- STORY -->
+<section class="section fade">
+  <p class="lang en active">
+    Our journey began with a simple meeting and grew into something beautiful.
+  </p>
+  <p class="lang zh">
+    我们的故事始于一次简单的相遇，并逐渐成长为美好的爱情。
+  </p>
+</section>
+
+<!-- EVENT -->
+<section class="section fade">
+
+  <h2 class="lang en active">The Celebration</h2>
+  <h2 class="lang zh">婚礼流程</h2>
+
+  <div class="event-item">
+    <p class="lang en active">Reception: 9:30 AM</p>
+    <p class="lang zh">迎宾：上午 9:30</p>
+  </div>
+
+  <div class="event-item">
+    <p class="lang en active">Ceremony: 10:00 AM</p>
+    <p class="lang zh">仪式：上午 10:00</p>
+  </div>
+
+  <div class="event-item">
+    <p class="lang en active">Lunch: 11:30 AM 🍣 Sushi buffet included</p>
+    <p class="lang zh">午宴：上午 11:30 🍣 提供寿司自助餐</p>
+  </div>
+
+</section>
+
+<!-- COUNTDOWN -->
+<section class="section fade">
+  <h2 class="lang en active">Counting Down</h2>
+  <h2 class="lang zh">婚礼倒计时</h2>
+  <div id="countdown"></div>
+</section>
+
+<!-- LOCATION -->
+<section class="section fade">
+
+  <h2 class="lang en active">Location</h2>
+  <h2 class="lang zh">地点</h2>
+
+  <p><strong>The Petals</strong></p>
+
+  <p class="lang en active">2-2-2 Taman Ria, Pulau Pinang</p>
+  <p class="lang zh">2-2-2 Taman Ria, Pulau Pinang</p>
+
+  <iframe
+    src="https://www.google.com/maps?q=The+Petals+Pulau+Pinang&output=embed"
+    width="100%" height="300">
+  </iframe>
+
+</section>
+
+<!-- GALLERY -->
+<section class="section fade">
+
+  <h2 class="lang en active">Moments</h2>
+  <h2 class="lang zh">回忆时刻</h2>
+
+  <div class="gallery">
+    <img src="images/1.jpg">
+    <img src="images/2.jpg">
+    <img src="images/3.jpg">
+  </div>
+
+</section>
+
+<!-- RSVP (FIXED 3 LINES) -->
+<section class="section fade">
+
+  <div class="rsvp-block">
+
+    <p class="lang en active rsvp-text-title">RSVP</p>
+    <p class="lang zh rsvp-text-title">出席回执</p>
+
+    <p class="lang en active rsvp-text-desc">
+      We would love to celebrate this moment with you ✨
+    </p>
+    <p class="lang zh rsvp-text-desc">
+      期待与您一同见证这一重要时刻 ✨
+    </p>
+
+    <a class="rsvp-button"
+       href="https://docs.google.com/forms/d/1NDi_VwUSDZ5FXL6u212zRSRVwDwJJSfGdp9XD2r5mqo/viewform"
+       target="_blank">
+
+      <span class="lang en active">Open RSVP Form</span>
+      <span class="lang zh">填写出席表格</span>
+
+    </a>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

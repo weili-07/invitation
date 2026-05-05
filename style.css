@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #fff1f6, #f3ecff, #eef6ff);
+    color: #333;
+  }
+  
+  /* ENTRY */
+  #entry-screen {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #fff1f6, #f3ecff, #eef6ff);
+    z-index: 99999;
+  }
+  
+  #entry-screen.hide {
+    opacity: 0;
+    transition: 1s ease;
+    pointer-events: none;
+  }
+  
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 120px;
+    gap: 10px;
+  }
+  
+  /* LANGUAGE */
+  .lang-switch {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 10000;
+  }
+  
+  .lang-slider {
+    position: relative;
+    display: flex;
+    width: 110px;
+    height: 38px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+  }
+  
+  .lang-slider button {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 13px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .lang-indicator {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg, #f8b5c6, #b9c7ff);
+    border-radius: 999px;
+    transition: transform 0.35s ease;
+  }
+  
+  /* SECTIONS */
+  .section {
+    padding: 100px 20px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1100px;
+    background: rgba(255,255,255,0.35);
+    border-radius: 24px;
+  }
+  
+  /* EVENT */
+  .event-item {
+    margin: 12px 0;
+  }
+  
+  /* GALLERY */
+  .gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .gallery img {
+    width: 30%;
+    border-radius: 16px;
+  }
+  
+  /* RSVP */
+  .rsvp-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .rsvp-text-title {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  
+  .rsvp-text-desc {
+    margin: 0;
+    opacity: 0.75;
+    text-align: center;
+  }
+  
+  .rsvp-button {
+    display: inline-block;
+    padding: 16px 30px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #f8b5c6, #8fb7ff);
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* LANG */
+  .lang { display: none; }
+  .lang.active { display: inline; }
+  
+  .lang.zh { font-size: 1.1rem; }
